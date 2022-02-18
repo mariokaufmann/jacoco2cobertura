@@ -13,8 +13,12 @@ fn main() -> anyhow::Result<()> {
     let args = cli::parse_args();
 
     let input_file_path = Path::new(&args.input_file);
-    if !input_file_path.exists() && !args.ignore_missing {
-        return Err(anyhow!("Input file is missing."));
+    if !input_file_path.exists() {
+        return if args.ignore_missing {
+            Ok(())
+        } else {
+            Err(anyhow!("Input file is missing."))
+        };
     }
 
     let input_text =
