@@ -1,0 +1,41 @@
+name: build
+on: [ push ]
+jobs:
+  build:
+    strategy:
+      matrix:
+        label: [ ubuntu-latest, windows-latest, macos-latest ]
+        include:
+          - label: ubuntu-latest
+            executable: jacoco2cobertura
+            artifact: jacoco2cobertura-linux
+          - label: macos-latest
+            executable: jacoco2cobertura
+            artifact: jacoco2cobertura-macos
+          - label: windows-latest
+            executable: jacoco2cobertura.exe
+            artifact: jacoco2cobertura-windows
+    runs-on: [ '${{ matrix.label }}' ]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: Check formatting
+        run: |
+          rustup component add rustfmt
+          cargo fmt --quiet -- --check
+      - name: Test
+        run: cargo test
+      - name: Lint
+        run: |
+          rustup component add clippy
+          cargo clippy -- -D warnings
+      - name: Build
+        run: cargo build --release
+      - name: Upload artifact
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.artifact }}
+          path: target/release/${{ matrix.executable }}
