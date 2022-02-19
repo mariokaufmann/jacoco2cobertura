@@ -1,6 +1,7 @@
 use serde::Serialize;
 
 #[derive(Serialize)]
+#[serde(rename = "coverage")]
 pub struct CoberturaCoverage {
     pub timestamp: f64,
     pub sources: CoberturaSources,
