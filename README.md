@@ -13,6 +13,11 @@ the [releases page](https://github.com/mariokaufmann/jacoco2cobertura/releases/l
 ./jacoco2cobertura --input-file jacoco.xml --output-file cobertura.xml
 ```
 
+If you want to pass source roots (i.e. the absolute path to the folders in which the sources file mentioned in the report are located), you can use the argument `--source-root` for that:
+```bash
+./jacoco2cobertura --input-file jacoco.xml --output-file cobertura.xml --source-root module1/src/main/java --source-root module2/src/main/java
+```
+
 To find out all available options use the `--help` option:
 
 ```bash
@@ -21,4 +26,4 @@ To find out all available options use the `--help` option:
 
 ## Credit
 
-This repository is an (incomplete) port of [cover2cover](https://github.com/rix0rrr/cover2cover).
+This repository is a port of [cover2cover](https://github.com/rix0rrr/cover2cover).

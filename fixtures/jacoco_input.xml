@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN"
+  "report.dtd">
+<report name="foo-domain">
+  <sessioninfo id="v23745-146464a3" start="1645083011973" dump="1645083014766"/>
+  <package name="com/foo/bar/domain/submission/port">
+    <class name="com/foo/bar/domain/submission/port/StartSubmissionUseCase"
+      sourcefilename="StartSubmissionUseCase.java"/>
+    <class name="com/foo/bar/domain/submission/port/StartSubmissionPort" sourcefilename="StartSubmissionPort.java"/>
+    <sourcefile name="StartSubmissionUseCase.java"/>
+    <sourcefile name="StartSubmissionPort.java"/>
+  </package>
+  <package name="com/foo/bar/domain/addresses">
+    <class name="com/foo/bar/domain/addresses/SuggestAddressesService" sourcefilename="SuggestAddressesService.java">
+      <method name="findAddressesByZipCodeOrCity" desc="(Ljava/lang/String;)Ljava/util/List;" line="22">
+        <counter type="INSTRUCTION" missed="0" covered="20"/>
+        <counter type="LINE" missed="0" covered="3"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="matchesQuery" desc="(Ljava/lang/String;)Ljava/util/function/Predicate;" line="29">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="isNotExcluded" desc="(Ljava/util/List;)Ljava/util/function/Predicate;" line="34">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="&lt;init&gt;"
+        desc="(Lcom/foo/bar/domain/addresses/port/LoadAddressesPort;Lcom/foo/bar/domain/addresses/port/LoadExcludedZipCodesPort;)V"
+        line="14">
+        <counter type="INSTRUCTION" missed="0" covered="9"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="lambda$isNotExcluded$2" desc="(Ljava/util/List;Lcom/foo/bar/domain/addresses/model/Address;)Z"
+        line="34">
+        <counter type="INSTRUCTION" missed="0" covered="6"/>
+        <counter type="LINE" missed="0" covered="2"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="lambda$isNotExcluded$1"
+        desc="(Lcom/foo/bar/domain/addresses/model/Address;Lcom/foo/bar/domain/addresses/model/ExcludedZipCode;)Z"
+        line="35">
+        <counter type="INSTRUCTION" missed="0" covered="16"/>
+        <counter type="BRANCH" missed="1" covered="3"/>
+        <counter type="LINE" missed="0" covered="2"/>
+        <counter type="COMPLEXITY" missed="1" covered="2"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="lambda$matchesQuery$0" desc="(Ljava/lang/String;Lcom/foo/bar/domain/addresses/model/Address;)Z"
+        line="29">
+        <counter type="INSTRUCTION" missed="0" covered="16"/>
+        <counter type="BRANCH" missed="0" covered="4"/>
+        <counter type="LINE" missed="0" covered="2"/>
+        <counter type="COMPLEXITY" missed="0" covered="3"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="73"/>
+      <counter type="BRANCH" missed="1" covered="7"/>
+      <counter type="LINE" missed="0" covered="9"/>
+      <counter type="COMPLEXITY" missed="1" covered="10"/>
+      <counter type="METHOD" missed="0" covered="7"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <sourcefile name="SuggestAddressesService.java">
+      <line nr="14" mi="0" ci="9" mb="0" cb="0"/>
+      <line nr="22" mi="0" ci="4" mb="0" cb="0"/>
+      <line nr="23" mi="0" ci="4" mb="0" cb="0"/>
+      <line nr="25" mi="0" ci="12" mb="0" cb="0"/>
+      <line nr="29" mi="0" ci="14" mb="0" cb="2"/>
+      <line nr="30" mi="0" ci="5" mb="0" cb="2"/>
+      <line nr="34" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="35" mi="0" ci="9" mb="0" cb="2"/>
+      <line nr="36" mi="0" ci="8" mb="1" cb="1"/>
+      <counter type="INSTRUCTION" missed="0" covered="73"/>
+      <counter type="BRANCH" missed="1" covered="7"/>
+      <counter type="LINE" missed="0" covered="9"/>
+      <counter type="COMPLEXITY" missed="1" covered="10"/>
+      <counter type="METHOD" missed="0" covered="7"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="0" covered="73"/>
+    <counter type="BRANCH" missed="1" covered="7"/>
+    <counter type="LINE" missed="0" covered="9"/>
+    <counter type="COMPLEXITY" missed="1" covered="10"/>
+    <counter type="METHOD" missed="0" covered="7"/>
+    <counter type="CLASS" missed="0" covered="1"/>
+  </package>
+  <package name="com/foo/bar/domain/testentities/model">
+    <class name="com/foo/bar/domain/testentities/model/Tree" sourcefilename="Tree.java">
+      <method name="isAdult" desc="()Z" line="23">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getLimit" desc="()I" line="24">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;IZI)V" line="7">
+        <counter type="INSTRUCTION" missed="0" covered="11"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="6">
+        <counter type="INSTRUCTION" missed="0" covered="107"/>
+        <counter type="LINE" missed="0" covered="14"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="6" covered="118"/>
+      <counter type="LINE" missed="2" covered="15"/>
+      <counter type="COMPLEXITY" missed="2" covered="2"/>
+      <counter type="METHOD" missed="2" covered="2"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/testentities/model/TestEntityType"
+      sourcefilename="TestEntityType.java">
+      <method name="&lt;clinit&gt;" desc="()V" line="3">
+        <counter type="INSTRUCTION" missed="0" covered="57"/>
+        <counter type="LINE" missed="0" covered="10"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="57"/>
+      <counter type="LINE" missed="0" covered="10"/>
+      <counter type="COMPLEXITY" missed="0" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/testentities/model/House" sourcefilename="House.java">
+      <method name="&lt;clinit&gt;" desc="()V" line="3">
+        <counter type="INSTRUCTION" missed="0" covered="15"/>
+        <counter type="LINE" missed="0" covered="3"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="15"/>
+      <counter type="LINE" missed="0" covered="3"/>
+      <counter type="COMPLEXITY" missed="0" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/testentities/model/TestEntityKey" sourcefilename="TestEntityKey.java">
+      <method name="&lt;init&gt;"
+        desc="(Lcom/foo/bar/domain/testentities/model/TestEntityType;Lcom/foo/bar/domain/testentities/model/Lock;)V"
+        line="5">
+        <counter type="INSTRUCTION" missed="0" covered="9"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getType" desc="()Lcom/foo/bar/domain/testentities/model/TestEntityType;" line="8">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getLock" desc="()Lcom/foo/bar/domain/testentities/model/Lock;" line="9">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="5">
+        <counter type="INSTRUCTION" missed="24" covered="25"/>
+        <counter type="BRANCH" missed="11" covered="5"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="7" covered="2"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="hashCode" desc="()I" line="5">
+        <counter type="INSTRUCTION" missed="4" covered="30"/>
+        <counter type="BRANCH" missed="2" covered="2"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="2" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="5">
+        <counter type="INSTRUCTION" missed="0" covered="6"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="28" covered="76"/>
+      <counter type="BRANCH" missed="13" covered="7"/>
+      <counter type="LINE" missed="0" covered="3"/>
+      <counter type="COMPLEXITY" missed="9" covered="7"/>
+      <counter type="METHOD" missed="0" covered="6"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/testentities/model/TestEntityCriteria"
+      sourcefilename="TestEntityCriteria.java">
+      <method name="&lt;init&gt;" desc="(Lcom/foo/bar/domain/testentities/model/Tree;Z)V" line="5">
+        <counter type="INSTRUCTION" missed="0" covered="9"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getTree" desc="()Lcom/foo/bar/domain/testentities/model/Tree;" line="8">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="isIncludesAccidentCoverage" desc="()Z" line="9">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="5">
+        <counter type="INSTRUCTION" missed="39" covered="0"/>
+        <counter type="BRANCH" missed="12" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="7" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="5">
+        <counter type="INSTRUCTION" missed="31" covered="0"/>
+        <counter type="BRANCH" missed="4" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="3" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="5">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="82" covered="9"/>
+      <counter type="BRANCH" missed="16" covered="0"/>
+      <counter type="LINE" missed="2" covered="1"/>
+      <counter type="COMPLEXITY" missed="13" covered="1"/>
+      <counter type="METHOD" missed="5" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/testentities/model/Lock" sourcefilename="Lock.java">
+      <method name="&lt;clinit&gt;" desc="()V" line="3">
+        <counter type="INSTRUCTION" missed="0" covered="27"/>
+        <counter type="LINE" missed="0" covered="5"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="27"/>
+      <counter type="LINE" missed="0" covered="5"/>
+      <counter type="COMPLEXITY" missed="0" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/testentities/model/TestEntity" sourcefilename="TestEntity.java">
+      <method name="&lt;init&gt;"
+        desc="(Lcom/foo/bar/domain/testentities/model/TestEntityKey;Ljava/math/BigDecimal;)V" line="6">
+        <counter type="INSTRUCTION" missed="0" covered="9"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getKey" desc="()Lcom/foo/bar/domain/testentities/model/TestEntityKey;" line="9">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getPrice" desc="()Ljava/math/BigDecimal;" line="10">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="6">
+        <counter type="INSTRUCTION" missed="12" covered="37"/>
+        <counter type="BRANCH" missed="9" covered="7"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="7" covered="2"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="hashCode" desc="()I" line="6">
+        <counter type="INSTRUCTION" missed="34" covered="0"/>
+        <counter type="BRANCH" missed="4" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="3" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="6">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="52" covered="52"/>
+      <counter type="BRANCH" missed="13" covered="7"/>
+      <counter type="LINE" missed="0" covered="3"/>
+      <counter type="COMPLEXITY" missed="11" covered="5"/>
+      <counter type="METHOD" missed="2" covered="4"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <sourcefile name="Lock.java">
+      <line nr="3" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="4" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="5" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="6" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="7" mi="0" ci="6" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="0" covered="27"/>
+      <counter type="LINE" missed="0" covered="5"/>
+      <counter type="COMPLEXITY" missed="0" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="House.java">
+      <line nr="3" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="4" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="5" mi="0" ci="6" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="0" covered="15"/>
+      <counter type="LINE" missed="0" covered="3"/>
+      <counter type="COMPLEXITY" missed="0" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="TestEntityType.java">
+      <line nr="3" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="5" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="8" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="9" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="10" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="11" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="14" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="15" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="16" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="19" mi="0" ci="6" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="0" covered="57"/>
+      <counter type="LINE" missed="0" covered="10"/>
+      <counter type="COMPLEXITY" missed="0" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="TestEntityKey.java">
+      <line nr="5" mi="28" ci="70" mb="13" cb="7"/>
+      <line nr="8" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="9" mi="0" ci="3" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="28" covered="76"/>
+      <counter type="BRANCH" missed="13" covered="7"/>
+      <counter type="LINE" missed="0" covered="3"/>
+      <counter type="COMPLEXITY" missed="9" covered="7"/>
+      <counter type="METHOD" missed="0" covered="6"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="Tree.java">
+      <line nr="6" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="7" mi="0" ci="11" mb="0" cb="0"/>
+      <line nr="9" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="10" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="11" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="12" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="13" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="14" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="15" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="16" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="17" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="18" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="19" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="20" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="21" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="23" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="24" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="6" covered="118"/>
+      <counter type="LINE" missed="2" covered="15"/>
+      <counter type="COMPLEXITY" missed="2" covered="2"/>
+      <counter type="METHOD" missed="2" covered="2"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="TestEntityCriteria.java">
+      <line nr="5" mi="76" ci="9" mb="16" cb="0"/>
+      <line nr="8" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="9" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="82" covered="9"/>
+      <counter type="BRANCH" missed="16" covered="0"/>
+      <counter type="LINE" missed="2" covered="1"/>
+      <counter type="COMPLEXITY" missed="13" covered="1"/>
+      <counter type="METHOD" missed="5" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="TestEntity.java">
+      <line nr="6" mi="52" ci="46" mb="13" cb="7"/>
+      <line nr="9" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="10" mi="0" ci="3" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="52" covered="52"/>
+      <counter type="BRANCH" missed="13" covered="7"/>
+      <counter type="LINE" missed="0" covered="3"/>
+      <counter type="COMPLEXITY" missed="11" covered="5"/>
+      <counter type="METHOD" missed="2" covered="4"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="168" covered="354"/>
+    <counter type="BRANCH" missed="42" covered="14"/>
+    <counter type="LINE" missed="4" covered="40"/>
+    <counter type="COMPLEXITY" missed="35" covered="18"/>
+    <counter type="METHOD" missed="9" covered="16"/>
+    <counter type="CLASS" missed="0" covered="7"/>
+  </package>
+  <package name="com/foo/bar/domain/offers/model">
+    <class name="com/foo/bar/domain/offers/model/OfferRequest" sourcefilename="OfferRequest.java">
+      <method name="&lt;init&gt;" desc="(Ljava/time/LocalDate;ILjava/lang/String;Ljava/util/List;)V" line="7">
+        <counter type="INSTRUCTION" missed="15" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getSaleOfferBegin" desc="()Ljava/time/LocalDate;" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getBfsNumber" desc="()I" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getZipCode" desc="()Ljava/lang/String;" line="12">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getPersonOfferRequests" desc="()Ljava/util/List;" line="13">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="7">
+        <counter type="INSTRUCTION" missed="73" covered="0"/>
+        <counter type="BRANCH" missed="24" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="13" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="7">
+        <counter type="INSTRUCTION" missed="55" covered="0"/>
+        <counter type="BRANCH" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="4" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="7">
+        <counter type="INSTRUCTION" missed="10" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="165" covered="0"/>
+      <counter type="BRANCH" missed="30" covered="0"/>
+      <counter type="LINE" missed="5" covered="0"/>
+      <counter type="COMPLEXITY" missed="23" covered="0"/>
+      <counter type="METHOD" missed="8" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <class name="com/foo/bar/domain/offers/model/TestEntityOfferRequest"
+      sourcefilename="TestEntityOfferRequest.java">
+      <method name="&lt;init&gt;"
+        desc="(Lcom/foo/bar/domain/testentities/model/TestEntityKey;Lcom/foo/bar/domain/testentities/model/TestEntityCriteria;)V"
+        line="7">
+        <counter type="INSTRUCTION" missed="9" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getKey" desc="()Lcom/foo/bar/domain/testentities/model/TestEntityKey;" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getCriteria" desc="()Lcom/foo/bar/domain/testentities/model/TestEntityCriteria;" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="7">
+        <counter type="INSTRUCTION" missed="49" covered="0"/>
+        <counter type="BRANCH" missed="16" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="9" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="7">
+        <counter type="INSTRUCTION" missed="34" covered="0"/>
+        <counter type="BRANCH" missed="4" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="3" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="7">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="104" covered="0"/>
+      <counter type="BRANCH" missed="20" covered="0"/>
+      <counter type="LINE" missed="3" covered="0"/>
+      <counter type="COMPLEXITY" missed="16" covered="0"/>
+      <counter type="METHOD" missed="6" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <class name="com/foo/bar/domain/offers/model/PersonOfferRequest" sourcefilename="PersonOfferRequest.java">
+      <method name="&lt;init&gt;"
+        desc="(Ljava/time/LocalDate;Lcom/foo/bar/domain/testentities/model/House;Lcom/foo/bar/domain/offers/model/TestEntityOfferRequest;)V"
+        line="7">
+        <counter type="INSTRUCTION" missed="12" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getDateOfBirth" desc="()Ljava/time/LocalDate;" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getHouse" desc="()Lcom/foo/bar/domain/testentities/model/House;" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getTestEntityOfferRequest"
+        desc="()Lcom/foo/bar/domain/offers/model/TestEntityOfferRequest;" line="12">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="7">
+        <counter type="INSTRUCTION" missed="66" covered="0"/>
+        <counter type="BRANCH" missed="22" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="12" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="7">
+        <counter type="INSTRUCTION" missed="48" covered="0"/>
+        <counter type="BRANCH" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="4" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="7">
+        <counter type="INSTRUCTION" missed="8" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="143" covered="0"/>
+      <counter type="BRANCH" missed="28" covered="0"/>
+      <counter type="LINE" missed="4" covered="0"/>
+      <counter type="COMPLEXITY" missed="21" covered="0"/>
+      <counter type="METHOD" missed="7" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <class name="com/foo/bar/domain/offers/model/PersonOffer" sourcefilename="PersonOffer.java">
+      <method name="&lt;init&gt;" desc="(Ljava/math/BigDecimal;)V" line="6">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getTestEntityPrice" desc="()Ljava/math/BigDecimal;" line="9">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="6">
+        <counter type="INSTRUCTION" missed="32" covered="0"/>
+        <counter type="BRANCH" missed="10" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="6" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="6">
+        <counter type="INSTRUCTION" missed="20" covered="0"/>
+        <counter type="BRANCH" missed="2" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="2" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="6">
+        <counter type="INSTRUCTION" missed="4" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="65" covered="0"/>
+      <counter type="BRANCH" missed="12" covered="0"/>
+      <counter type="LINE" missed="2" covered="0"/>
+      <counter type="COMPLEXITY" missed="11" covered="0"/>
+      <counter type="METHOD" missed="5" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <sourcefile name="OfferRequest.java">
+      <line nr="7" mi="153" ci="0" mb="30" cb="0"/>
+      <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="11" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="12" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="13" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="165" covered="0"/>
+      <counter type="BRANCH" missed="30" covered="0"/>
+      <counter type="LINE" missed="5" covered="0"/>
+      <counter type="COMPLEXITY" missed="23" covered="0"/>
+      <counter type="METHOD" missed="8" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <sourcefile name="PersonOfferRequest.java">
+      <line nr="7" mi="134" ci="0" mb="28" cb="0"/>
+      <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="11" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="12" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="143" covered="0"/>
+      <counter type="BRANCH" missed="28" covered="0"/>
+      <counter type="LINE" missed="4" covered="0"/>
+      <counter type="COMPLEXITY" missed="21" covered="0"/>
+      <counter type="METHOD" missed="7" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <sourcefile name="PersonOffer.java">
+      <line nr="6" mi="62" ci="0" mb="12" cb="0"/>
+      <line nr="9" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="65" covered="0"/>
+      <counter type="BRANCH" missed="12" covered="0"/>
+      <counter type="LINE" missed="2" covered="0"/>
+      <counter type="COMPLEXITY" missed="11" covered="0"/>
+      <counter type="METHOD" missed="5" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <sourcefile name="TestEntityOfferRequest.java">
+      <line nr="7" mi="98" ci="0" mb="20" cb="0"/>
+      <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="11" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="104" covered="0"/>
+      <counter type="BRANCH" missed="20" covered="0"/>
+      <counter type="LINE" missed="3" covered="0"/>
+      <counter type="COMPLEXITY" missed="16" covered="0"/>
+      <counter type="METHOD" missed="6" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="477" covered="0"/>
+    <counter type="BRANCH" missed="90" covered="0"/>
+    <counter type="LINE" missed="14" covered="0"/>
+    <counter type="COMPLEXITY" missed="71" covered="0"/>
+    <counter type="METHOD" missed="26" covered="0"/>
+    <counter type="CLASS" missed="4" covered="0"/>
+  </package>
+  <package name="com/foo/bar/domain/submission">
+    <class name="com/foo/bar/domain/submission/StartSubmissionService" sourcefilename="StartSubmissionService.java">
+      <method name="startSubmissionProcess" desc="(Lcom/foo/bar/domain/submission/model/Submission;)Ljava/util/UUID;"
+        line="19">
+        <counter type="INSTRUCTION" missed="0" covered="5"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getSubmissionProcessStatus"
+        desc="(Ljava/util/UUID;)Lcom/foo/bar/domain/submission/model/HouseStatus;" line="24">
+        <counter type="INSTRUCTION" missed="0" covered="5"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getSubmissionProcessEntryUrl" desc="(Ljava/util/UUID;)Ljava/lang/String;" line="29">
+        <counter type="INSTRUCTION" missed="0" covered="5"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="&lt;init&gt;" desc="(Lcom/foo/bar/domain/submission/port/StartSubmissionPort;)V" line="12">
+        <counter type="INSTRUCTION" missed="0" covered="6"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="21"/>
+      <counter type="LINE" missed="0" covered="4"/>
+      <counter type="COMPLEXITY" missed="0" covered="4"/>
+      <counter type="METHOD" missed="0" covered="4"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <sourcefile name="StartSubmissionService.java">
+      <line nr="12" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="19" mi="0" ci="5" mb="0" cb="0"/>
+      <line nr="24" mi="0" ci="5" mb="0" cb="0"/>
+      <line nr="29" mi="0" ci="5" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="0" covered="21"/>
+      <counter type="LINE" missed="0" covered="4"/>
+      <counter type="COMPLEXITY" missed="0" covered="4"/>
+      <counter type="METHOD" missed="0" covered="4"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="0" covered="21"/>
+    <counter type="LINE" missed="0" covered="4"/>
+    <counter type="COMPLEXITY" missed="0" covered="4"/>
+    <counter type="METHOD" missed="0" covered="4"/>
+    <counter type="CLASS" missed="0" covered="1"/>
+  </package>
+  <package name="com/foo/bar/domain">
+    <class name="com/foo/bar/domain/DomainConfig" sourcefilename="DomainConfig.java">
+      <method name="&lt;init&gt;" desc="()V" line="8">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="3" covered="0"/>
+      <counter type="LINE" missed="1" covered="0"/>
+      <counter type="COMPLEXITY" missed="1" covered="0"/>
+      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <sourcefile name="DomainConfig.java">
+      <line nr="8" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="3" covered="0"/>
+      <counter type="LINE" missed="1" covered="0"/>
+      <counter type="COMPLEXITY" missed="1" covered="0"/>
+      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="3" covered="0"/>
+    <counter type="LINE" missed="1" covered="0"/>
+    <counter type="COMPLEXITY" missed="1" covered="0"/>
+    <counter type="METHOD" missed="1" covered="0"/>
+    <counter type="CLASS" missed="1" covered="0"/>
+  </package>
+  <package name="com/foo/bar/domain/testentities">
+    <class name="com/foo/bar/domain/testentities/CollectTestEntitiesService"
+      sourcefilename="CollectTestEntitiesService.java">
+      <method name="findAllAvailabletestEntities"
+        desc="(Ljava/time/LocalDate;Ljava/time/LocalDate;Lcom/foo/bar/domain/testentities/model/House;ILjava/lang/String;Lcom/foo/bar/domain/testentities/model/TestEntityCriteria;)Ljava/util/List;"
+        line="36">
+        <counter type="INSTRUCTION" missed="0" covered="36"/>
+        <counter type="LINE" missed="0" covered="7"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="priceIsAvailableOrLog"
+        desc="(Lcom/foo/bar/domain/testentities/model/TestEntityKey;Ljava/util/Map;)Z" line="54">
+        <counter type="INSTRUCTION" missed="0" covered="12"/>
+        <counter type="BRANCH" missed="0" covered="2"/>
+        <counter type="LINE" missed="0" covered="4"/>
+        <counter type="COMPLEXITY" missed="0" covered="2"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="&lt;init&gt;"
+        desc="(Lcom/foo/bar/domain/testentities/port/LoadtestentitiesPort;Lcom/foo/bar/domain/testentities/port/FindRegionPort;Lcom/foo/bar/domain/testentities/port/LoadTestEntityPricesPort;)V"
+        line="21">
+        <counter type="INSTRUCTION" missed="0" covered="12"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="lambda$findAllAvailabletestEntities$1"
+        desc="(Ljava/util/Map;Lcom/foo/bar/domain/testentities/model/TestEntityKey;)Lcom/foo/bar/domain/testentities/model/TestEntity;"
+        line="49">
+        <counter type="INSTRUCTION" missed="0" covered="9"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="lambda$findAllAvailabletestEntities$0"
+        desc="(Ljava/util/Map;Lcom/foo/bar/domain/testentities/model/TestEntityKey;)Z" line="48">
+        <counter type="INSTRUCTION" missed="0" covered="5"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="&lt;clinit&gt;" desc="()V" line="19">
+        <counter type="INSTRUCTION" missed="0" covered="4"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="78"/>
+      <counter type="BRANCH" missed="0" covered="2"/>
+      <counter type="LINE" missed="0" covered="13"/>
+      <counter type="COMPLEXITY" missed="0" covered="7"/>
+      <counter type="METHOD" missed="0" covered="6"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <sourcefile name="CollectTestEntitiesService.java">
+      <line nr="19" mi="0" ci="4" mb="0" cb="0"/>
+      <line nr="21" mi="0" ci="12" mb="0" cb="0"/>
+      <line nr="36" mi="0" ci="9" mb="0" cb="0"/>
+      <line nr="41" mi="0" ci="7" mb="0" cb="0"/>
+      <line nr="42" mi="0" ci="9" mb="0" cb="0"/>
+      <line nr="47" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="48" mi="0" ci="8" mb="0" cb="0"/>
+      <line nr="49" mi="0" ci="10" mb="0" cb="0"/>
+      <line nr="50" mi="0" ci="1" mb="0" cb="0"/>
+      <line nr="54" mi="0" ci="4" mb="0" cb="0"/>
+      <line nr="55" mi="0" ci="2" mb="0" cb="2"/>
+      <line nr="56" mi="0" ci="4" mb="0" cb="0"/>
+      <line nr="58" mi="0" ci="2" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="0" covered="78"/>
+      <counter type="BRANCH" missed="0" covered="2"/>
+      <counter type="LINE" missed="0" covered="13"/>
+      <counter type="COMPLEXITY" missed="0" covered="7"/>
+      <counter type="METHOD" missed="0" covered="6"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="0" covered="78"/>
+    <counter type="BRANCH" missed="0" covered="2"/>
+    <counter type="LINE" missed="0" covered="13"/>
+    <counter type="COMPLEXITY" missed="0" covered="7"/>
+    <counter type="METHOD" missed="0" covered="6"/>
+    <counter type="CLASS" missed="0" covered="1"/>
+  </package>
+  <package name="com/foo/bar/domain/testentities/port">
+    <class name="com/foo/bar/domain/testentities/port/LoadtestentitiesPort"
+      sourcefilename="LoadtestentitiesPort.java"/>
+    <class name="com/foo/bar/domain/testentities/port/CollecttestentitiesUseCase"
+      sourcefilename="CollecttestentitiesUseCase.java"/>
+    <class name="com/foo/bar/domain/testentities/port/LoadTestEntityPricesPort"
+      sourcefilename="LoadTestEntityPricesPort.java"/>
+    <class name="com/foo/bar/domain/testentities/port/FindRegionPort" sourcefilename="FindRegionPort.java"/>
+    <sourcefile name="LoadtestentitiesPort.java"/>
+    <sourcefile name="FindRegionPort.java"/>
+    <sourcefile name="CollecttestentitiesUseCase.java"/>
+    <sourcefile name="LoadTestEntityPricesPort.java"/>
+  </package>
+  <package name="com/foo/bar/domain/addresses/port">
+    <class name="com/foo/bar/domain/addresses/port/LoadAddressesPort" sourcefilename="LoadAddressesPort.java"/>
+    <class name="com/foo/bar/domain/addresses/port/SuggestAddressesUseCase"
+      sourcefilename="SuggestAddressesUseCase.java"/>
+    <class name="com/foo/bar/domain/addresses/port/LoadExcludedZipCodesPort"
+      sourcefilename="LoadExcludedZipCodesPort.java"/>
+    <sourcefile name="SuggestAddressesUseCase.java"/>
+    <sourcefile name="LoadExcludedZipCodesPort.java"/>
+    <sourcefile name="LoadAddressesPort.java"/>
+  </package>
+  <package name="com/foo/bar/domain/addresses/model">
+    <class name="com/foo/bar/domain/addresses/model/ExcludedZipCode" sourcefilename="ExcludedZipCode.java">
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;Ljava/lang/String;)V" line="5">
+        <counter type="INSTRUCTION" missed="0" covered="9"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getZipCode" desc="()Ljava/lang/String;" line="8">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getZipCodeExtension" desc="()Ljava/lang/String;" line="9">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="5">
+        <counter type="INSTRUCTION" missed="49" covered="0"/>
+        <counter type="BRANCH" missed="16" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="9" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="5">
+        <counter type="INSTRUCTION" missed="34" covered="0"/>
+        <counter type="BRANCH" missed="4" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="3" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="5">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="89" covered="15"/>
+      <counter type="BRANCH" missed="20" covered="0"/>
+      <counter type="LINE" missed="0" covered="3"/>
+      <counter type="COMPLEXITY" missed="13" covered="3"/>
+      <counter type="METHOD" missed="3" covered="3"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/addresses/model/Address" sourcefilename="Address.java">
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V"
+        line="5">
+        <counter type="INSTRUCTION" missed="0" covered="18"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getZipCode" desc="()Ljava/lang/String;" line="8">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getZipCodeExtension" desc="()Ljava/lang/String;" line="9">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getCity" desc="()Ljava/lang/String;" line="10">
+        <counter type="INSTRUCTION" missed="0" covered="3"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getMunicipality" desc="()Ljava/lang/String;" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getBfsNumber" desc="()I" line="12">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="5">
+        <counter type="INSTRUCTION" missed="90" covered="0"/>
+        <counter type="BRANCH" missed="30" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="16" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="5">
+        <counter type="INSTRUCTION" missed="69" covered="0"/>
+        <counter type="BRANCH" missed="8" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="5" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="5">
+        <counter type="INSTRUCTION" missed="12" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="177" covered="27"/>
+      <counter type="BRANCH" missed="38" covered="0"/>
+      <counter type="LINE" missed="2" covered="4"/>
+      <counter type="COMPLEXITY" missed="24" covered="4"/>
+      <counter type="METHOD" missed="5" covered="4"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <sourcefile name="ExcludedZipCode.java">
+      <line nr="5" mi="89" ci="9" mb="20" cb="0"/>
+      <line nr="8" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="9" mi="0" ci="3" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="89" covered="15"/>
+      <counter type="BRANCH" missed="20" covered="0"/>
+      <counter type="LINE" missed="0" covered="3"/>
+      <counter type="COMPLEXITY" missed="13" covered="3"/>
+      <counter type="METHOD" missed="3" covered="3"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="Address.java">
+      <line nr="5" mi="171" ci="18" mb="38" cb="0"/>
+      <line nr="8" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="9" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="10" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="11" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="12" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="177" covered="27"/>
+      <counter type="BRANCH" missed="38" covered="0"/>
+      <counter type="LINE" missed="2" covered="4"/>
+      <counter type="COMPLEXITY" missed="24" covered="4"/>
+      <counter type="METHOD" missed="5" covered="4"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="266" covered="42"/>
+    <counter type="BRANCH" missed="58" covered="0"/>
+    <counter type="LINE" missed="2" covered="7"/>
+    <counter type="COMPLEXITY" missed="37" covered="7"/>
+    <counter type="METHOD" missed="8" covered="7"/>
+    <counter type="CLASS" missed="0" covered="2"/>
+  </package>
+  <package name="com/foo/bar/domain/submission/model">
+    <class name="com/foo/bar/domain/submission/model/SubmissionPerson" sourcefilename="SubmissionPerson.java">
+      <method name="&lt;init&gt;"
+        desc="(Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Lcom/foo/bar/domain/testentities/model/House;Lcom/foo/bar/domain/submission/model/HouseContactData;Lcom/foo/bar/domain/submission/model/HouseOffer;)V"
+        line="7">
+        <counter type="INSTRUCTION" missed="21" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getFirstName" desc="()Ljava/lang/String;" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getLastName" desc="()Ljava/lang/String;" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getDateOfBirth" desc="()Ljava/time/LocalDate;" line="12">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getHouse" desc="()Lcom/foo/bar/domain/testentities/model/House;" line="13">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getContactData" desc="()Lcom/foo/bar/domain/submission/model/HouseContactData;" line="14">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getOffer" desc="()Lcom/foo/bar/domain/submission/model/HouseOffer;" line="15">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="7">
+        <counter type="INSTRUCTION" missed="117" covered="0"/>
+        <counter type="BRANCH" missed="40" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="21" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="7">
+        <counter type="INSTRUCTION" missed="90" covered="0"/>
+        <counter type="BRANCH" missed="12" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="7" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="7">
+        <counter type="INSTRUCTION" missed="14" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="260" covered="0"/>
+      <counter type="BRANCH" missed="52" covered="0"/>
+      <counter type="LINE" missed="7" covered="0"/>
+      <counter type="COMPLEXITY" missed="36" covered="0"/>
+      <counter type="METHOD" missed="10" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <class name="com/foo/bar/domain/submission/model/TestEntityOffer"
+      sourcefilename="TestEntityOffer.java">
+      <method name="&lt;init&gt;"
+        desc="(Lcom/foo/bar/domain/testentities/model/TestEntityKey;Lcom/foo/bar/domain/testentities/model/TestEntityCriteria;Ljava/lang/String;)V"
+        line="7">
+        <counter type="INSTRUCTION" missed="12" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getKey" desc="()Lcom/foo/bar/domain/testentities/model/TestEntityKey;" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getCriteria" desc="()Lcom/foo/bar/domain/testentities/model/TestEntityCriteria;" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getMedicZsr" desc="()Ljava/lang/String;" line="12">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="7">
+        <counter type="INSTRUCTION" missed="66" covered="0"/>
+        <counter type="BRANCH" missed="22" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="12" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="7">
+        <counter type="INSTRUCTION" missed="48" covered="0"/>
+        <counter type="BRANCH" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="4" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="7">
+        <counter type="INSTRUCTION" missed="8" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="143" covered="0"/>
+      <counter type="BRANCH" missed="28" covered="0"/>
+      <counter type="LINE" missed="4" covered="0"/>
+      <counter type="COMPLEXITY" missed="21" covered="0"/>
+      <counter type="METHOD" missed="7" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <class name="com/foo/bar/domain/submission/model/HouseOffer" sourcefilename="HouseOffer.java">
+      <method name="&lt;init&gt;" desc="(Lcom/foo/bar/domain/submission/model/TestEntityOffer;)V"
+        line="5">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getTestEntityOffer"
+        desc="()Lcom/foo/bar/domain/submission/model/TestEntityOffer;" line="8">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="5">
+        <counter type="INSTRUCTION" missed="32" covered="0"/>
+        <counter type="BRANCH" missed="10" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="6" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="5">
+        <counter type="INSTRUCTION" missed="20" covered="0"/>
+        <counter type="BRANCH" missed="2" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="2" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="5">
+        <counter type="INSTRUCTION" missed="4" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="65" covered="0"/>
+      <counter type="BRANCH" missed="12" covered="0"/>
+      <counter type="LINE" missed="2" covered="0"/>
+      <counter type="COMPLEXITY" missed="11" covered="0"/>
+      <counter type="METHOD" missed="5" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <class name="com/foo/bar/domain/submission/model/HouseAddress" sourcefilename="HouseAddress.java">
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V" line="5">
+        <counter type="INSTRUCTION" missed="0" covered="15"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getStreet" desc="()Ljava/lang/String;" line="8">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getHouseNumber" desc="()Ljava/lang/String;" line="9">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getBfsNumber" desc="()I" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getZipCode" desc="()Ljava/lang/String;" line="11">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="5">
+        <counter type="INSTRUCTION" missed="73" covered="0"/>
+        <counter type="BRANCH" missed="24" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="13" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="5">
+        <counter type="INSTRUCTION" missed="55" covered="0"/>
+        <counter type="BRANCH" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="4" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="5">
+        <counter type="INSTRUCTION" missed="10" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="150" covered="15"/>
+      <counter type="BRANCH" missed="30" covered="0"/>
+      <counter type="LINE" missed="4" covered="1"/>
+      <counter type="COMPLEXITY" missed="22" covered="1"/>
+      <counter type="METHOD" missed="7" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/submission/model/HouseContactData"
+      sourcefilename="HouseContactData.java">
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;Ljava/lang/String;)V" line="5">
+        <counter type="INSTRUCTION" missed="9" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getPhone" desc="()Ljava/lang/String;" line="8">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getEmail" desc="()Ljava/lang/String;" line="9">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="5">
+        <counter type="INSTRUCTION" missed="49" covered="0"/>
+        <counter type="BRANCH" missed="16" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="9" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="5">
+        <counter type="INSTRUCTION" missed="34" covered="0"/>
+        <counter type="BRANCH" missed="4" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="3" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="5">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="104" covered="0"/>
+      <counter type="BRANCH" missed="20" covered="0"/>
+      <counter type="LINE" missed="3" covered="0"/>
+      <counter type="COMPLEXITY" missed="16" covered="0"/>
+      <counter type="METHOD" missed="6" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <class name="com/foo/bar/domain/submission/model/Submission" sourcefilename="Submission.java">
+      <method name="&lt;init&gt;" desc="(Ljava/util/List;Lcom/foo/bar/domain/submission/model/HouseAddress;)V"
+        line="6">
+        <counter type="INSTRUCTION" missed="0" covered="9"/>
+        <counter type="LINE" missed="0" covered="1"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <method name="getPersons" desc="()Ljava/util/List;" line="9">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="getAddress" desc="()Lcom/foo/bar/domain/submission/model/HouseAddress;" line="10">
+        <counter type="INSTRUCTION" missed="3" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="equals" desc="(Ljava/lang/Object;)Z" line="6">
+        <counter type="INSTRUCTION" missed="49" covered="0"/>
+        <counter type="BRANCH" missed="16" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="9" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="hashCode" desc="()I" line="6">
+        <counter type="INSTRUCTION" missed="34" covered="0"/>
+        <counter type="BRANCH" missed="4" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="3" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="6">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="95" covered="9"/>
+      <counter type="BRANCH" missed="20" covered="0"/>
+      <counter type="LINE" missed="2" covered="1"/>
+      <counter type="COMPLEXITY" missed="15" covered="1"/>
+      <counter type="METHOD" missed="5" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <class name="com/foo/bar/domain/submission/model/HouseStatus" sourcefilename="HouseStatus.java">
+      <method name="&lt;clinit&gt;" desc="()V" line="3">
+        <counter type="INSTRUCTION" missed="0" covered="21"/>
+        <counter type="LINE" missed="0" covered="4"/>
+        <counter type="COMPLEXITY" missed="0" covered="1"/>
+        <counter type="METHOD" missed="0" covered="1"/>
+      </method>
+      <counter type="INSTRUCTION" missed="0" covered="21"/>
+      <counter type="LINE" missed="0" covered="4"/>
+      <counter type="COMPLEXITY" missed="0" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </class>
+    <sourcefile name="HouseContactData.java">
+      <line nr="5" mi="98" ci="0" mb="20" cb="0"/>
+      <line nr="8" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="9" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="104" covered="0"/>
+      <counter type="BRANCH" missed="20" covered="0"/>
+      <counter type="LINE" missed="3" covered="0"/>
+      <counter type="COMPLEXITY" missed="16" covered="0"/>
+      <counter type="METHOD" missed="6" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <sourcefile name="HouseOffer.java">
+      <line nr="5" mi="62" ci="0" mb="12" cb="0"/>
+      <line nr="8" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="65" covered="0"/>
+      <counter type="BRANCH" missed="12" covered="0"/>
+      <counter type="LINE" missed="2" covered="0"/>
+      <counter type="COMPLEXITY" missed="11" covered="0"/>
+      <counter type="METHOD" missed="5" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <sourcefile name="SubmissionPerson.java">
+      <line nr="7" mi="242" ci="0" mb="52" cb="0"/>
+      <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="11" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="12" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="13" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="14" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="15" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="260" covered="0"/>
+      <counter type="BRANCH" missed="52" covered="0"/>
+      <counter type="LINE" missed="7" covered="0"/>
+      <counter type="COMPLEXITY" missed="36" covered="0"/>
+      <counter type="METHOD" missed="10" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <sourcefile name="HouseAddress.java">
+      <line nr="5" mi="138" ci="15" mb="30" cb="0"/>
+      <line nr="8" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="9" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="11" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="150" covered="15"/>
+      <counter type="BRANCH" missed="30" covered="0"/>
+      <counter type="LINE" missed="4" covered="1"/>
+      <counter type="COMPLEXITY" missed="22" covered="1"/>
+      <counter type="METHOD" missed="7" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="Submission.java">
+      <line nr="6" mi="89" ci="9" mb="20" cb="0"/>
+      <line nr="9" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="95" covered="9"/>
+      <counter type="BRANCH" missed="20" covered="0"/>
+      <counter type="LINE" missed="2" covered="1"/>
+      <counter type="COMPLEXITY" missed="15" covered="1"/>
+      <counter type="METHOD" missed="5" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="HouseStatus.java">
+      <line nr="3" mi="0" ci="3" mb="0" cb="0"/>
+      <line nr="4" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="5" mi="0" ci="6" mb="0" cb="0"/>
+      <line nr="6" mi="0" ci="6" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="0" covered="21"/>
+      <counter type="LINE" missed="0" covered="4"/>
+      <counter type="COMPLEXITY" missed="0" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="CLASS" missed="0" covered="1"/>
+    </sourcefile>
+    <sourcefile name="TestEntityOffer.java">
+      <line nr="7" mi="134" ci="0" mb="28" cb="0"/>
+      <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="11" mi="3" ci="0" mb="0" cb="0"/>
+      <line nr="12" mi="3" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="143" covered="0"/>
+      <counter type="BRANCH" missed="28" covered="0"/>
+      <counter type="LINE" missed="4" covered="0"/>
+      <counter type="COMPLEXITY" missed="21" covered="0"/>
+      <counter type="METHOD" missed="7" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="817" covered="45"/>
+    <counter type="BRANCH" missed="162" covered="0"/>
+    <counter type="LINE" missed="22" covered="6"/>
+    <counter type="COMPLEXITY" missed="121" covered="3"/>
+    <counter type="METHOD" missed="40" covered="3"/>
+    <counter type="CLASS" missed="4" covered="3"/>
+  </package>
+  <package name="com/foo/bar/domain/offers/port">
+    <class name="com/foo/bar/domain/offers/port/CalculateOfferUseCase" sourcefilename="CalculateOfferUseCase.java"/>
+    <class name="com/foo/bar/domain/offers/port/CalculateOfferPort" sourcefilename="CalculateOfferPort.java"/>
+    <sourcefile name="CalculateOfferUseCase.java"/>
+    <sourcefile name="CalculateOfferPort.java"/>
+  </package>
+  <package name="com/foo/bar/domain/offers">
+    <class name="com/foo/bar/domain/offers/CalculateOfferService" sourcefilename="CalculateOfferService.java">
+      <method name="calculateOffer" desc="(Lcom/foo/bar/domain/offers/model/OfferRequest;)Ljava/util/List;" line="19">
+        <counter type="INSTRUCTION" missed="5" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <method name="&lt;init&gt;" desc="(Lcom/foo/bar/domain/offers/port/CalculateOfferPort;)V" line="12">
+        <counter type="INSTRUCTION" missed="6" covered="0"/>
+        <counter type="LINE" missed="1" covered="0"/>
+        <counter type="COMPLEXITY" missed="1" covered="0"/>
+        <counter type="METHOD" missed="1" covered="0"/>
+      </method>
+      <counter type="INSTRUCTION" missed="11" covered="0"/>
+      <counter type="LINE" missed="2" covered="0"/>
+      <counter type="COMPLEXITY" missed="2" covered="0"/>
+      <counter type="METHOD" missed="2" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </class>
+    <sourcefile name="CalculateOfferService.java">
+      <line nr="12" mi="6" ci="0" mb="0" cb="0"/>
+      <line nr="19" mi="5" ci="0" mb="0" cb="0"/>
+      <counter type="INSTRUCTION" missed="11" covered="0"/>
+      <counter type="LINE" missed="2" covered="0"/>
+      <counter type="COMPLEXITY" missed="2" covered="0"/>
+      <counter type="METHOD" missed="2" covered="0"/>
+      <counter type="CLASS" missed="1" covered="0"/>
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="11" covered="0"/>
+    <counter type="LINE" missed="2" covered="0"/>
+    <counter type="COMPLEXITY" missed="2" covered="0"/>
+    <counter type="METHOD" missed="2" covered="0"/>
+    <counter type="CLASS" missed="1" covered="0"/>
+  </package>
+  <counter type="INSTRUCTION" missed="1742" covered="613"/>
+  <counter type="BRANCH" missed="353" covered="23"/>
+  <counter type="LINE" missed="45" covered="79"/>
+  <counter type="COMPLEXITY" missed="268" covered="49"/>
+  <counter type="METHOD" missed="86" covered="43"/>
+  <counter type="CLASS" missed="10" covered="15"/>
+</report>

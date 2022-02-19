@@ -3,7 +3,7 @@ use serde::Serialize;
 #[derive(Serialize)]
 pub struct CoberturaCoverage {
     pub timestamp: f64,
-    pub sources: Vec<CoberturaSource>,
+    pub sources: CoberturaSources,
     pub packages: Vec<CoberturaPackage>,
     #[serde(rename = "line-rate")]
     pub line_rate: String,
@@ -13,7 +13,15 @@ pub struct CoberturaCoverage {
 }
 
 #[derive(Serialize)]
-pub struct CoberturaSource {}
+pub struct CoberturaSources {
+    pub source: Vec<CoberturaSource>,
+}
+
+#[derive(Serialize)]
+pub struct CoberturaSource {
+    #[serde(rename = "$value")]
+    pub value: String,
+}
 
 #[derive(Serialize)]
 pub struct CoberturaPackage {
