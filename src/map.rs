@@ -3,6 +3,7 @@ use anyhow::Context;
 use crate::cobertura::{
     CoberturaClass, CoberturaClasses, CoberturaCondition, CoberturaConditions, CoberturaCoverage,
     CoberturaLine, CoberturaLines, CoberturaMethod, CoberturaMethods, CoberturaPackage,
+    CoberturaSource, CoberturaSources,
 };
 use crate::jacoco::{
     JacocoClass, JacocoCounter, JacocoLine, JacocoMethod, JacocoPackage, JacocoSourcefile,
@@ -15,7 +16,10 @@ struct CounterInfo {
     complexity: String,
 }
 
-pub fn map(jacoco_report: JacocoReport) -> anyhow::Result<CoberturaCoverage> {
+pub fn map(
+    jacoco_report: JacocoReport,
+    source_roots: Vec<String>,
+) -> anyhow::Result<CoberturaCoverage> {
     let packages: anyhow::Result<Vec<CoberturaPackage>> = jacoco_report
         .packages
         .into_iter()
@@ -26,12 +30,28 @@ pub fn map(jacoco_report: JacocoReport) -> anyhow::Result<CoberturaCoverage> {
 
     Ok(CoberturaCoverage {
         timestamp: (jacoco_report.session_info.start as f64) / 1000_f64,
-        sources: Vec::new(),
+        sources: map_source_roots(source_roots),
         packages,
         complexity: counter_info.complexity,
         line_rate: counter_info.line_rate,
         branch_rate: counter_info.branch_rate,
     })
+}
+
+fn map_source_roots(sources: Vec<String>) -> CoberturaSources {
+    let source_roots = if sources.is_empty() {
+        vec![CoberturaSource {
+            value: ".".to_owned(),
+        }]
+    } else {
+        sources
+            .into_iter()
+            .map(|source| CoberturaSource { value: source })
+            .collect()
+    };
+    CoberturaSources {
+        source: source_roots,
+    }
 }
 
 fn map_package(jacoco_package: JacocoPackage) -> anyhow::Result<CoberturaPackage> {
