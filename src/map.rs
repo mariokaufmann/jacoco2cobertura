@@ -118,7 +118,7 @@ fn map_class(
     Ok(CoberturaClass {
         name,
         file_name,
-        lines,
+        lines: CoberturaLines { line: lines },
         methods: CoberturaMethods { method: methods },
         complexity: counter_info.complexity,
         line_rate: counter_info.line_rate,
