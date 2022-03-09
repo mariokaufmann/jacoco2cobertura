@@ -118,7 +118,7 @@ fn map_class(
     Ok(CoberturaClass {
         name,
         file_name,
-        lines,
+        lines: CoberturaLines { line: lines },
         methods: CoberturaMethods { method: methods },
         complexity: counter_info.complexity,
         line_rate: counter_info.line_rate,
@@ -236,7 +236,7 @@ fn map_counter_info(counters: &[JacocoCounter]) -> CounterInfo {
 }
 
 fn map_name(name: &str) -> String {
-    name.replace("/", ".")
+    name.replace('/', ".")
 }
 
 fn map_optional_float(value: Option<f64>) -> String {

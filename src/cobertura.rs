@@ -44,7 +44,7 @@ pub struct CoberturaClasses {
 pub struct CoberturaClass {
     pub name: String,
     pub methods: CoberturaMethods,
-    pub lines: Vec<CoberturaLine>,
+    pub lines: CoberturaLines,
     #[serde(rename = "filename")]
     pub file_name: String,
     #[serde(rename = "line-rate")]
