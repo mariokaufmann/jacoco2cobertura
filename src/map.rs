@@ -236,7 +236,7 @@ fn map_counter_info(counters: &[JacocoCounter]) -> CounterInfo {
 }
 
 fn map_name(name: &str) -> String {
-    name.replace("/", ".")
+    name.replace('/', ".")
 }
 
 fn map_optional_float(value: Option<f64>) -> String {
