@@ -3,7 +3,7 @@ use serde::Deserialize;
 #[derive(Deserialize)]
 pub struct JacocoReport {
     #[serde(rename = "sessioninfo")]
-    pub session_info: JacocoSessionInfo,
+    pub session_info: Vec<JacocoSessionInfo>,
     #[serde(rename = "package", default)]
     pub packages: Vec<JacocoPackage>,
     #[serde(rename = "counter", default)]
