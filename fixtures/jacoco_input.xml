@@ -2,6 +2,7 @@
   "report.dtd">
 <report name="foo-domain">
   <sessioninfo id="v23745-146464a3" start="1645083011973" dump="1645083014766"/>
+  <sessioninfo id="v23745-146464a4" start="1645083011983" dump="1645083014766"/>
   <package name="com/foo/bar/domain/submission/port">
     <class name="com/foo/bar/domain/submission/port/StartSubmissionUseCase"
       sourcefilename="StartSubmissionUseCase.java"/>

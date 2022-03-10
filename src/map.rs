@@ -27,9 +27,13 @@ pub fn map(
         .collect();
     let packages = packages.context("Could not map Cobertura package.")?;
     let counter_info = map_counter_info(&jacoco_report.counters);
+    let session_info = jacoco_report
+        .session_info
+        .get(0)
+        .context("Could not find any session info in input report.")?;
 
     Ok(CoberturaCoverage {
-        timestamp: (jacoco_report.session_info.start as f64) / 1000_f64,
+        timestamp: (session_info.start as f64) / 1000_f64,
         sources: map_source_roots(source_roots),
         packages,
         complexity: counter_info.complexity,
