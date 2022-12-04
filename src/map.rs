@@ -157,7 +157,7 @@ fn map_method(
     let counter_info = map_counter_info(&jacoco_method.counters);
     let lines = method_jacoco_lines
         .iter()
-        .map(|line| map_line(*line))
+        .map(|line| map_line(line))
         .collect();
 
     CoberturaMethod {
@@ -171,11 +171,7 @@ fn map_method(
 }
 
 fn map_line(jacoco_line: &JacocoLine) -> CoberturaLine {
-    let hits = if jacoco_line.covered_instructions > 0 {
-        1
-    } else {
-        0
-    };
+    let hits = u32::from(jacoco_line.covered_instructions > 0);
 
     let conditions;
     let branch;
