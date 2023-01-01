@@ -6,22 +6,33 @@ pub fn parse_args() -> Args {
 
 /// Utility to convert a Jacoco coverage report to a Cobertura coverage report.
 #[derive(Parser, Debug)]
-#[clap(author, version, about, long_about = None)]
+#[command(author, version, about, long_about = None)]
 pub struct Args {
     /// Input file with the Jacoco report
-    #[clap(short, long)]
+    #[arg(short, long)]
     pub input_file: String,
 
     /// Output file to write the Cobertura report to
-    #[clap(short, long)]
+    #[arg(short, long)]
     pub output_file: String,
 
     /// The absolute paths to the source roots (i.e. the folders where the source files mentioned
     /// in the input report are located.
-    #[clap(long)]
+    #[arg(long)]
     pub source_root: Vec<String>,
 
     /// Whether to ignore a missing input file
-    #[clap(long)]
+    #[arg(long)]
     pub ignore_missing: bool,
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::cli::Args;
+    use clap::CommandFactory;
+
+    #[test]
+    fn verify_cli() {
+        Args::command().debug_assert()
+    }
 }
