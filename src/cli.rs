@@ -28,8 +28,8 @@ pub struct Args {
 
 #[cfg(test)]
 mod tests {
-    use clap::CommandFactory;
     use crate::cli::Args;
+    use clap::CommandFactory;
 
     #[test]
     fn verify_cli() {
