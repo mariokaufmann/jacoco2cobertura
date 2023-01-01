@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-anyhow = "1.0.66"
+anyhow = "1.0.68"
 clap = { version = "3.2.23", features = ["derive"] }
-serde = { version = "1.0.148", features = ["derive"] }
-quick-xml = { version = "0.26.0", features = ["serialize"] }
+serde = { version = "1.0.152", features = ["derive"] }
+quick-xml = { version = "0.27.1", features = ["serialize"] }
