@@ -241,16 +241,15 @@ fn map_name(name: &str) -> String {
 
 fn map_optional_float(value: Option<f64>) -> String {
     let value = value.unwrap_or(0.0);
-    format!("{}", value)
+    format!("{value}")
 }
 
 fn map_cobertura_file_name(jacoco_source_file_name: &str, name: &str) -> anyhow::Result<String> {
     let extension_position = jacoco_source_file_name.rfind('.').with_context(|| {
         format!(
-            "Could not extract source file extension from file name ({}).",
-            jacoco_source_file_name
+            "Could not extract source file extension from file name ({jacoco_source_file_name})."
         )
     })?;
     let extension = &jacoco_source_file_name[extension_position..];
-    Ok(format!("{}{}", name, extension))
+    Ok(format!("{name}{extension}"))
 }
