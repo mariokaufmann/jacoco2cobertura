@@ -29,7 +29,7 @@ pub fn map(
     let counter_info = map_counter_info(&jacoco_report.counters);
     let session_info = jacoco_report
         .session_info
-        .get(0)
+        .first()
         .context("Could not find any session info in input report.")?;
 
     Ok(CoberturaCoverage {
