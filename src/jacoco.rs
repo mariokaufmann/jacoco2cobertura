@@ -68,6 +68,7 @@ pub struct JacocoSourcefile {
     pub name: String,
     #[serde(rename = "line", default)]
     pub lines: Vec<JacocoLine>,
+    #[allow(dead_code)]
     #[serde(rename = "counter", default)]
     pub counters: Vec<JacocoCounter>,
 }
@@ -76,6 +77,7 @@ pub struct JacocoSourcefile {
 pub struct JacocoLine {
     #[serde(rename = "@nr")]
     pub number: u32,
+    #[allow(dead_code)]
     #[serde(rename = "@mi")]
     pub missed_instructions: u32,
     #[serde(rename = "@ci")]
